@@ -1,0 +1,37 @@
+body { font-family: Arial, sans-serif; background: #f5f6f8; color: #111 }
+.card { background: white; border-radius:8px; padding:12px; margin-bottom:12px; box-shadow:0 1px 3px rgba(0,0,0,0.06) }
+.seats { display:flex; flex-wrap:wrap; gap:4px; margin-top:8px }
+.seat { padding:6px 8px; border-radius:4px; font-size:12px }
+.seat.available { background:#ecfdf5; color:#064e3b }
+.seat.taken { background:#fff1f2; color:#7f1d1d }
+.slots button { margin:6px 6px 6px 0; padding:6px 10px; border-radius:6px; border:1px solid #ddd }
+.events { max-height:400px; overflow:auto; background:#fff; padding:8px; border-radius:6px }
+.event { font-family:monospace; font-size:12px; border-bottom:1px solid #eee; padding:6px 0 }
+.note{margin-top:8px;font-size:12px;color:#666}
+
+/* Admin Dashboard Styles */
+.admin-panel { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.06) }
+.admin-panel h2 { margin-top: 0; color: #1f2937 }
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin: 20px 0 }
+.stat-card { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px; }
+.stat-card h4 { margin: 0 0 10px 0; font-size: 14px; opacity: 0.9 }
+.stat-value { font-size: 32px; font-weight: bold; margin-bottom: 10px }
+.stat-detail { font-size: 12px; opacity: 0.8 }
+
+.occupancy-section { margin-top: 30px }
+.occupancy-table { width: 100%; border-collapse: collapse; margin-top: 10px }
+.occupancy-table th { background: #f3f4f6; padding: 12px; text-align: left; font-weight: 600; border-bottom: 1px solid #e5e7eb }
+.occupancy-table td { padding: 12px; border-bottom: 1px solid #f3f4f6 }
+.badge { padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500 }
+.badge-bus { background: #dbeafe; color: #0c4a6e }
+.badge-movie { background: #fce7f3; color: #831843 }
+.badge-doctor { background: #dcfce7; color: #15803d }
+
+.occupancy-bar { display: flex; align-items: center; background: #f3f4f6; border-radius: 4px; overflow: hidden; position: relative; height: 20px }
+.occupancy-fill { background: linear-gradient(90deg, #667eea, #764ba2); height: 100%; transition: width 0.3s ease }
+.occupancy-bar span { position: absolute; right: 4px; font-size: 11px; font-weight: 500; color: #1f2937 }
+
+.view-toggle { display: flex; gap: 8px }
+.view-toggle button { padding: 8px 16px; border: 2px solid #ddd; background: white; border-radius: 6px; cursor: pointer; transition: all 0.2s }
+.view-toggle button.active { background: #667eea; color: white; border-color: #667eea }
+
